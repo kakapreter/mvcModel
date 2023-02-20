@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.xjt.dao.IUserDao">
+    <!--insert-->
+    <insert id="insertUser"  parameterType="User">
+        insert into user values (#{id},#{email},#{username},#{role},#{mobile})
+    </insert>
+
+    <!--delect-->
+    <delete id="delectUserById"  parameterType="long">
+        delete from user where id=#{id}
+    </delete>
+
+    <!--update-->
+    <update id="updateUserById" parameterType="User">
+        update user set username=#{username},email=#{email},role=#{role},mobile=#{mobile} where id=#{id}
+    </update>
+
+    <!--select-->
+    <select id="selectUser" resultType="com.xjt.model.User" parameterType="long">
+        select * from user where id = #{id}
+    </select>
+    <select id="selectUserAll" resultType="com.xjt.model.User" parameterType="List">
+        select *from user;
+    </select>
+
+</mapper>
