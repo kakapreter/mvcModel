@@ -9,7 +9,7 @@
     </insert>
 
     <!--delect-->
-    <delete id="delectUserById"  parameterType="long">
+    <delete id="deleteUserById"  parameterType="long">
         delete from user where id=#{id}
     </delete>
 
