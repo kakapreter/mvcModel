@@ -28,8 +28,8 @@ public class UserController {
         userService.insertUser(user);
     }
 
-    //delect
-    @RequestMapping("/delect")
+    //delete
+    @RequestMapping("/delete")
     public void delectUserById() throws Exception{
         userService.delectUserById(1);
     }
