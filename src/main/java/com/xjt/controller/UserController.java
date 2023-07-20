@@ -38,7 +38,7 @@ public class UserController {
     @RequestMapping("/update")
     public void updateUserById() throws Exception{
         User user = new User();
-        user.setId(2);
+        user.setId(1);
         user.setUsername("sss4");
         user.setMobile("444");
         user.setEmail("444");
