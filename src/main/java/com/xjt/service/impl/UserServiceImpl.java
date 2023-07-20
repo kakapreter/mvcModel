@@ -19,7 +19,7 @@ public class UserServiceImpl implements IUserService {
 
     //delete
     @Override
-    public void deleteUserById(long id) { userDao.delectUserById(id); }
+    public void deleteUserById(long id) { userDao.deleteUserById(id); }
 
     //update
     @Override
