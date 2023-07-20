@@ -9,7 +9,7 @@ public interface IUserService {
     void insertUser(User user);
 
     //delect
-    void delectUserById(long id);
+    void deleteUserById(long id);
 
     //update
     void updateUserById(User user);
