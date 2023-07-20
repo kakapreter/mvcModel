@@ -17,7 +17,7 @@ public class UserServiceImpl implements IUserService {
     @Override
     public void insertUser(User user) { userDao.insertUser(user); }
 
-    //delect
+    //delete
     @Override
     public void deleteUserById(long id) { userDao.delectUserById(id); }
 
