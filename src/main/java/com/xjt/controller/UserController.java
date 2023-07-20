@@ -31,7 +31,7 @@ public class UserController {
     //delete
     @RequestMapping("/delete")
     public void delectUserById() throws Exception{
-        userService.delectUserById(1);
+        userService.deleteUserById(1);
     }
 
     //update
