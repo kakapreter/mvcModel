@@ -8,8 +8,8 @@ public interface IUserDao {
     //insert
     void insertUser(User user);
 
-    //delect
-    void delectUserById(long id);
+    //delete
+    void deleteUserById(long id);
 
     //update
     void updateUserById(User user);
