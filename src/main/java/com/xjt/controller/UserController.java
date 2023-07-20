@@ -61,7 +61,7 @@ public class UserController {
         ModelAndView mv = new ModelAndView();
         mv.addObject("users", users);
         //发送的jsp页面的名
-        mv.setViewName("user");
+        mv.setViewName("users");
         return mv;
 
     }
